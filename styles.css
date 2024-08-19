@@ -1,0 +1,1331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Maven+Pro:wght@400..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Neon&display=swap');
+/* styles.css */
+
+/* Reset básico */
+* {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    list-style: none;
+    border: 0;
+}
+
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+*, body {
+    font-family: Open Sans, sans-serif;
+    outline: 0;
+    box-sizing: inherit;
+    
+  }
+
+/* Header */
+header {
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.logo-santander-red {
+ width:108px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0 15px;
+    height: auto;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div {
+    display: block;
+    unicode-bidi: isolate;
+}
+  
+img {
+    border-style: none;
+}
+  
+b, strong {
+    font-weight: bolder;
+}
+
+.mobile-header .row{
+   justify-content: start;
+}
+
+.mobile-header {
+    padding: 24px 15px;
+    width: 100vw;
+    height: 66.92px;
+    
+}
+/* Main */
+.container-banner{
+    position: relative;
+    padding-top: 40%;
+}
+.mobile-banner{
+    background-image: url(img/mobile-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-position-y: -26px;
+    height:503px;
+}
+.mobile-form{
+    width: 90%;
+    height: 375px;
+    /* padding-right: 15px;
+    padding-left: 15px; */
+    margin-right: 15px;
+    margin-left: 15px;  
+    border-radius: 4px;
+    box-shadow: 0 2px 10px 0 rgba(68, 68, 68, .2);
+    background-color: #fff;
+    position: relative;
+}
+.form-description-1{
+    padding: 32px 24px 0 24px;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 16px;
+}
+.form-description-2{
+    padding: 0px 24px 0 24px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 40px;
+}
+.form-buttons{
+    display: flex;
+    padding: 0px 24px 0 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+input{
+    width: 242px;
+    height: 50.33px;
+    border-radius: 4px;
+    border: 1px solid #767676;
+    margin-bottom: 10px 15px;
+    
+}
+label{
+    background-color: #fff;
+    color: #444;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    left: 38px;
+    line-height: 1.5;
+    padding-left: 2px;
+    padding-right: 2px;
+    position: absolute;
+    top: 235px;
+  
+}
+button{
+    background-color: #cc0000;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .4s ease;
+    border: 0;
+    padding: 12px;
+    margin: 20px 24px;
+}
+.container-beneficios{
+    height: 550px;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    color: #222;
+}
+.mobile-beneficios{
+    padding: 40px 15px 40px 15px;
+}
+
+.oferta-icone img{
+    height: 80px;
+    margin: 16px;
+}
+.mobile-oferta{
+width: 290px;
+height: 312px;
+border-radius: 4px;
+box-shadow: 0 0 16px #2222223d;
+background-color: #fff;
+margin-bottom: 24px;
+margin: 15px;
+border-left: solid 2px #cc0000;
+display: flex;
+flex-direction: column;
+padding: 24px;
+justify-content: center;
+}
+.oferta-description-title{
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+.oferta-description-text{
+    font-size: 14px;
+}
+.container-pacotes-beneficios{
+    height: 1516px;
+    font-size: 24px;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fbfbfb;
+}
+.mobile-pacote-beneficios{
+    padding: 40px 15px 40px 15px;
+    height: 216px;
+}
+.mobile-pacote{
+    border-radius: 4px;
+    box-shadow: 0 0 16px rgba(34, 34, 34, .24);
+    background-color: #fff;
+    position: relative;
+    padding-top: 34px;
+    width: 260px;
+    height: 368px;
+    margin-bottom: 64px;
+}
+.pacotes-description-1{
+    margin-bottom: 60px;
+}
+.pacote-description-title{
+    font-size: 18px;
+    width: 260px;
+    margin-bottom: 8px;
+    }
+.pacote-description-text{
+font-size: 14px;
+padding: 18px 32px;
+text-align: start;
+}
+.pacote-description-value{
+font-size: 36px;
+font-weight: 300;
+line-height: 1.24;
+letter-spacing: -1.5px;
+color: #000;
+margin-bottom: 32px;
+width: 260px;
+text-decoration: none;
+}
+.pacote-description-menor{
+font-size: 0.5em;
+}
+ul{
+    list-style:url(img/check.svg);
+    line-height: 2;
+}
+.mobile-hr{
+    width: 100%;
+    height: 1px;
+    background-color: #d8d8d8;
+}
+.mobile-servicos{
+height: 625px;
+border-radius: 4px;
+border: 1px solid #ccc;
+background-color: #fff;
+padding: 40px 24px 24px;
+}
+.servicos-description-1{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 24px;
+}
+@media (min-width:768px) {
+    .mobile-header {
+        padding: 16px 15px 16px 72px;
+        width: 90vw;
+        height: 80px;
+    }
+    .logo-santander-red {
+        width: 135px;
+        height: 48px;
+   
+    }
+    .container-banner{
+        padding: 32px 46px 32px 46px;
+        height: 426px;
+        display: flex;
+        justify-content: end;
+        
+    }
+    .mobile-banner{
+        background-image: url(img/tablet-desktop-banner.jpg);
+        background-size: cover;
+        background-position-x: 43%;
+        background-position-y: unset;
+        height:auto;
+        
+    }
+    .mobile-form{
+        width: 592px;
+        height: 362.33px;
+        
+    }
+    .form-description-1{
+        padding: 35px 35px 0px 35px;
+        font-size: 40px;
+        line-height: 1.5;
+        color: #222;
+        margin-bottom: 16px;
+      
+    }
+    .form-description-2{
+        padding: 0px 35px 0 35px;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #767676;
+        margin-bottom: 40px;
+    }
+    .form-buttons{
+        padding: 0px 35px 0 35px;
+        flex-direction: row;
+        width: 100%;
+    }
+    input{
+        width: 292px;
+        margin: 0;
+        margin-right: 15px;
+        padding: 20px;
+        font-family: 'Maven Pro', sans-serif;
+        font-size: 16px;
+       
+}
+button{
+    width: 200px;
+    margin: 0;
+    margin-left: 15px;
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+.container-beneficios{
+    font-size: 36px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.mobile-beneficios{
+    padding: 0px 15px;
+    margin: 0px 49px;
+}
+.beneficios-description-1{
+    margin-bottom: 40px;
+}
+.mobile-oferta{
+    width: max-content;
+    align-items: center;
+    flex-direction: row;
+    height: max-content;
+    }
+    .oferta-description-title{
+        font-size: 22px;
+    }
+    .oferta-description-text{
+        font-size: 16px;
+    }
+
+    .container-pacotes-beneficios{
+        font-size: 36px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .pacote-description-title{
+        font-size: 22px;
+        }
+    .pacote-description-text{
+    font-size: 16px;
+    }
+    .mobile-servicos{
+        padding: 56px 15vw;
+    }
+    .mobile-pacote{
+        width: 290px;
+    }
+    .servicos-description-1{
+        font-size: 22px;
+    }
+}
+
+/* Módulo dos cartões */
+.modulo-cartoes {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eef6f8;
+}
+
+@media (min-width: 768px) {
+  .modulo-cartoes {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+.conteudo-modulos-cartoes {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .conteudo-modulos-cartoes {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+}
+
+.div-img-cartoes {
+  margin-bottom: 40px !important;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .div-img-cartoes {
+    margin-left: 10vw;
+    margin-right: 8.5vw;
+    margin-bottom: 40px !important;
+  }
+}
+
+.img-cartoes {
+  width: 280px;
+}
+
+@media (min-width: 767.00px) {
+  .img-cartoes {
+    width: 400px;
+  }
+}
+
+.titulo-texto-cartoes {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 16px !important;
+}
+
+@media (min-width: 768px) {
+  .titulo-texto-cartoes {
+    font-size: 36px;
+    margin-bottom: 16px !important;
+  }
+}
+
+
+.descricao-cartoes {
+  margin-bottom: 24px !important;
+}
+
+
+/* Módulo passos abrir conta */
+
+.modulo-passos-abrir-conta {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.conteudo-modulo-abrir-conta {
+  display: flex;
+  align-items: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.imagem-maquineta {
+  margin-right: 5vw;
+}
+
+@media (max-width: 767.98px) {
+  .imagem-maquineta {
+    display: none;
+  }
+}
+
+.titulo-passos-abrir-conta {
+  font-size: 24px;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 40px !important;
+}
+
+
+@media (min-width: 768px) {
+  .titulo-passos-abrir-conta {
+      font-size: 36px;
+      margin-bottom: 40px !important;
+  }
+}
+
+
+.lista-passos-abrir-conta {
+  margin-bottom: 40px !important;
+}
+
+.informacao-item {
+  margin-bottom: 56px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.circulo {
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    margin-right: 24px;
+    padding: 10px;
+    flex-shrink: 0;
+    font-size: 22px;
+    line-height: 26px;
+    color: #c00;
+
+}
+
+.texto-item-abrir-conta {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.texto-final-abrir-conta {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 16px !important;
+}
+
+
+.imagem-pessoas-cartoes {
+  background-image: url('../img/imagem-santander-pessoas.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 286px;
+  background-color: #f0f0f0;
+
+
+}
+
+
+/* Módulo cursos educacionais */
+
+@media (min-width: 768px) {
+  .mob-cursos-educacionais {
+      position: relative;
+  }
+}
+
+@media (min-width: 768px) {
+  .modulo-cursos-educacionais {
+      position: relative;
+  }
+}
+
+
+.conteudo-modulo-cursos {
+  background-color: #fbfbfb;
+}
+
+@media (min-width: 768px) {
+  .imagem-pessoas-cartoes {
+      width: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+  }
+}
+
+
+.div-modulo-cursos {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+@media (min-width: 768px) {
+  .div-modulo-cursos {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+
+.div2-modulo-cursos {
+  padding: 40px 0 64px;
+}
+
+@media (min-width: 768px) {
+  .div2-modulo-cursos {
+      padding: 148px 10vw 148px 0;
+      margin-left: -300px;
+  }
+}
+
+
+
+.titulo-modulo-cursos-educacionais {
+    font-size: 24px;
+    line-height: 1.5;
+    color: #222;
+    margin-bottom: 16px !important;
+
+}
+
+@media (min-width: 768px) {
+  .titulo-modulo-cursos-educacionais {
+      font-size: 36px;
+      margin-bottom: 16px !important;
+  }
+}
+
+.texto-modulo-cursos-educacionais {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #222;
+  margin-bottom: 8px !important;
+}
+
+@media (min-width: 768px) {
+  .mob-form2-abra-sua-conta {
+      position: relative;
+  }
+}
+
+
+.modulo-form2-abra-sua-conta {
+  background-color: #cc0000;
+}
+
+
+.div-form2-abra-sua-conta {
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
+.mob-conteudo-form2-abra-sua-conta {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .mob-conteudo-form2-abra-sua-conta {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+.conteudo-form2-abra-sua-conta {
+  padding: 40px 0;
+
+}
+
+@media (min-width: 768px) {
+  .conteudo-form2-abra-sua-conta {
+      padding: 88px 0 88px 6vw;
+  }
+}
+
+
+.titulo1-form2-abra-sua-conta {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 24px !important;
+  color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .titulo1-form2-abra-sua-conta {
+      font-size: 16px;
+      margin-bottom: 24px !important;
+  }
+}
+
+.texto-abra-sua-conta {
+  color: #fff;
+  text-decoration: underline;
+  cursor: pointer;
+  border-bottom: none;
+  margin: 0 4px;
+  background-color: transparent;
+}
+
+.titulo2-form2-abra-sua-conta {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 24px !important;
+  color: #fff !important;
+}
+
+@media (min-width: 768px) {
+  .titulo2-form2-abra-sua-conta {
+      font-size: 40px;
+      margin-bottom: 24px !important;
+  }
+}
+
+
+.form2 {
+  margin-bottom: 24px !important;
+  border-top: 0 solid red !important;
+}
+
+@media (min-width: 768px) {
+  .form2 {
+      margin-right: 16px;
+      margin-bottom: 24px !important;
+  }
+}
+
+
+.formulario-digitar-cpf{
+  margin-bottom: 24px;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .formulario-digitar-cpf {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+.div-form-digitar-cpf {
+  border-radius: 4px;
+  position: relative;
+  width: 100%;
+
+}
+
+.input-form2 {
+  background: #cc0000;
+  color: #fff;
+  font-size: 15px;
+  border-color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+}
+
+@media (min-width: 768px) {
+  .input-form2 {
+      min-width: 280px;
+  }
+}
+
+
+.label-form2 {
+  background: #cc0000;
+  color: #fff;
+}
+
+.input-form2::placeholder {
+  color: #fff; 
+  opacity: 1;  
+}
+
+.toda-parte-botao-peca-ja {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 768px) {
+  .toda-parte-botao-peca-ja {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
+
+.mobile-botao-peca-ja {
+  display: block;
+  padding: 0;
+}
+
+.botao-peca-ja {
+  min-width: 200px !important;
+  background-color: #fff;
+  color: #c00;
+  border: none;
+  height: 48px;
+  line-height: 32px;
+  max-width: 320px;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition-property: background-color, transform;
+  appearance: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: SantanderMicroText, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .botao-peca-ja {
+      max-width: 280px;
+      height: 56px;
+      font-size: 20px;
+      font-weight: bold;
+  }
+}
+
+input::placeholder {
+  font-size: 20px;
+}
+
+.botao-peca-ja:hover {
+  background-color: #dfd7d7;
+}
+
+
+.img-mulher-celular {
+  background-image: url('../img/mulher-telefone-santander.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 342px;
+  background-color: #f0f0f0;
+}
+
+@media (min-width: 768px) {
+  .img-mulher-celular {
+      width: 50%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+  }
+}
+
+/* Módulo Rodapé */
+
+.modulo-rodape {
+  background-color: #222;
+  padding: 64px 0 80px;
+
+}
+
+@media (min-width: 768px) {
+  .modulo-rodape {
+      padding: 80px 0;
+  }
+}
+
+
+
+.conteudo-rodape {
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.texto-rodape, a {
+  color: #c7c7c7;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+
+@media (min-width: 768px) {
+  .texto-rodape {
+      font-size: 16px;
+  }
+}
+
+.linha-rodape {
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-bottom: 40px !important;
+  background: #acabab;
+  border-radius: 1rem;
+}
+
+.texto2-rodape {
+  color: #c7c7c7;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Módulo dos cartões */
+
+.mob-form-fixo {
+  padding: 0;
+}
+
+.modulo-form-fixo {
+  top: 530px;
+  transform: translateY(0);
+  animation-name: slidein;
+  animation-duration: .3s;
+  display: flex;
+  z-index: 2;
+  position: fixed;
+  min-width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #c00;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.conteudo-form-fixo {
+  grid-gap: 1rem;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  height: 100%;
+}
+
+.form-fixo {
+  height: 80%;
+  border-radius: 4px;
+  padding: 0 1rem;
+}
+
+
+.form-fixo::placeholder {
+  color: #222; 
+  font-size: 15px;
+  opacity: 1;  
+}
+
+/*Css formulario*/
+.header-onbording {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  height: 4rem;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.img-logo-identificacao {
+  position: relative;
+  transition: fill 0.3s ease;
+  display: flex;
+  height: 3rem;
+  max-width: 8rem;
+  margin-top: 0.5rem;
+}
+
+.line-header {
+  width: 100%;
+  border: none;
+  height: 1px;
+  background-color: #F0F0F0;
+  margin: 0;
+}
+
+.font-description-ident-1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.font-description-ident-2 {
+  font-size: 16px;
+
+}
+
+#input-text::placeholder {
+  color: #444;
+  display: block;
+  font-family: SantanderMicroText, sans-serif;
+  padding: 10px;
+  font-weight: 500;
+}
+
+#input-text {
+  width: 88%;
+}
+
+#input-text:focus,
+input:focus {
+  border-color: #17a2b8;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.dss-form-field {
+  color: #222;
+  font-family: SantanderMicroText, sans-serif;
+  font-size: 14px;
+  line-height: 1.28571429;
+  margin-left: 1.3rem;
+  margin-top: 0.4rem;
+}
+
+.form-identificacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.ds-form-input {
+  height: auto;
+}
+
+.dss-display-flex {
+  display: flex;
+}
+
+.dss-flex-column {
+  flex-direction: column;
+}
+
+.dss-pl-0 {
+  padding: 1.4rem;
+  margin-top: 1.7rem;
+  letter-spacing: -0.07em;
+  margin-bottom: 1.5rem;
+}
+
+.dss-caption a {
+  color: red;
+}
+
+.button_footer {
+  background-color: #c00;
+  color: #fff;
+  min-width: 100%;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8em;
+  font-family: SantanderMicroText, sans-serif;
+  font-size: 17px;
+}
+
+#identifica-celular:active~.form-celular {
+  border: 1px solid black;
+  background-color: #c00;
+}
+
+.dss-text-sm-center {
+  padding: 0 15px;
+}
+
+.section-ident {
+  margin-bottom: 10rem;
+}
+
+.dss-form-field_input {
+  background-color: #fff;
+  border-radius: 4px;
+  border: 1px solid #767676;
+  color: #444;
+  display: block;
+  font-family: SantanderMicroText, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  min-height: 48px;
+  padding: 8px 16px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  transition-duration: .2s;
+  transition-property: border-color, box-shadow;
+  transition-timing-function: cubic-bezier(.25, .8, .25, 1);
+  width: 100%;
+}
+
+/* Estilo das divs */
+.div1,
+.div2 {
+  width: 300px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Div 2 inicialmente escondida */
+.div2 {
+  display: none;
+}
+
+/* Mostrar Div 2 e esconder Div 1 quando o checkbox estiver marcado */
+#toggle-divs:checked~.div1 {
+  display: none;
+}
+
+#toggle-divs:checked~.div2 {
+  display: block;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+.font-valida-celular {
+  font-size: 28px;
+  letter-spacing: -0.07em;
+  text-align: left;
+  font-weight: 400;
+}
+
+.dss-padding {
+  padding: 0 24px 40px 24px;
+}
+
+.cellphone-info-box {
+  display: flex;
+  flex-direction: row;
+  padding: 15px 24px 0 24px;
+  gap: 10px;
+
+}
+
+.cellphone-info-box_label {
+  font-size: 23px;
+  line-height: 0;
+  font-weight: 800;
+  padding: 0 24px 0 24px;
+}
+
+.dss-h3 {
+  letter-spacing: -0.07em;
+  padding-left: 5rem;
+  font-size: 24px;
+  color: #222;
+  padding-bottom: 1.5rem;
+}
+
+.dss-display-flex {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2.5rem;
+}
+
+.dss-text-sm-center {
+  text-align: center;
+  color: #444;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28571429;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.dss-button--text {
+  background-color: transparent;
+  border: none;
+  transition-property: color;
+}
+
+.dss-button-link {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  color: #c00;
+  cursor: pointer;
+  display: inline-block;
+  font-family: SantanderMicroText, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 40px;
+  line-height: 24px;
+  max-width: 288px;
+  min-width: 58px;
+  outline: 0;
+  overflow: hidden;
+  padding: 8px;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+  text-align: center;
+  text-decoration: underline;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.letter-spacing {
+  text-align: justify;
+  letter-spacing: -0.07em;
+}
+
+.dss-h3-nome {
+  padding: 0 24px 15px 24px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.dss-button-nome {
+  text-align: left;
+  padding: 0 24px 60px;
+}
+
+.dss-form-nome {
+  margin-bottom: 40px;
+}
+
+.dss-radio-group__label {
+  align-items: flex-start;
+  color: #222;
+  cursor: pointer;
+  display: flex;
+  font-family: SantanderMicroText, sans-serif;
+  font-size: 16px;
+  min-height: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.col-md-12 {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.opf-page {
+  margin-top: 2.5rem;
+}
+
+.client-dont-know-my-cep {
+  text-align: end;
+  padding: 18px 24px 60px;
+}
+
+@media (min-width: 768px) {
+  .opf-page {
+    padding: 4rem 27% 0rem 20%;
+    margin-top: -2rem;
+  }
+
+  .dss-form-field {
+    padding: 0 15px;
+  }
+
+  .row {
+    padding: 0;
+  }
+
+  .dss-button-link {
+    text-align: left;
+  }
+}
+
+@media(min-width: 1024px) {
+  .dss-h3 {
+    margin-top: -44px;
+    margin-left: 40px;
+  }
+
+  .dss-text-sm-center {
+    text-align: left;
+    width: 70%;
+  }
+
+}

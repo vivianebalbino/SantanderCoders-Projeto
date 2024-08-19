@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abra sua conta - Santander</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <section>
+            <div class="header-onbording">
+                <div class="">
+                    <div>
+                        <img src="https://abrasuaconta.santander.com.br/landing/assets/img/logo/logo-santander-red.svg"
+                            class="img-logo-identificacao" alt="logo santander">
+                    </div>
+                </div>
+            </div>
+            <hr class="line-header" />
+        </section>
+    </header>
+
+    <body>
+        <main>
+            <div class="opf-page">
+                <section class="section-ident">
+                    <div id="indentifica-form" class="form-celular">
+                        <div>
+                            <div>
+                                <h1 type="h1" class="form-description-1 font-description-ident-1">Olá, vamos começar!
+                                    Digite o número do seu celular</h1>
+                                <p class="form-description-2 font-description-ident-2">Enviaremos um
+                                    código de segurança por SMS para esse número.</p>
+                            </div>
+                            <form action="/Onbording/validaCelular.html" method="get" class="form-identificacao">
+                                <div class="row ds-form-input">
+                                    <input id="input-text" type="tel" placeholder="Celular" class="dss-form-field_input"
+                                        required>
+                                </div>
+                                <span class="dss-form-field"> Ex:(11)99999-9999</span>
+                                <div class="dss-display-flex dss-flex-column">
+                                    <div class="dss-pl-0">
+                                        <span class="dss-caption">
+                                            <p>Ao continuar você aceita os&nbsp;
+                                                <a href="https://www.santander.com.br/institucional-santander/seguranca/politica-de-privacidade"
+                                                    target="_blank">
+                                                    <span>Termos de Uso e Política de Privacidade</span>
+                                                </a>&nbsp;do Santander
+                                            </p>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="dss-text-sm-center dss-text-md-left">
+                                    <button id="concordar-continuar" type="submit"
+                                        class="button_footer dss-button">Continuar</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </body>
+
+</html>

